@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang='en'><head><meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Program Hash List</title>
-<style>
-body{font-family:Arial;margin:0;padding:0;}
-.container{max-width:100vw;padding:10px;}
-table{border-collapse:collapse;width:100%;font-size:1em;}
-th,td{border:1px solid #ccc;padding:8px;text-align:left;}
-th{background:#f4f4f4;}
-tr:nth-child(even){background:#fafafa;}
-@media (max-width: 700px) {
-  table, thead, tbody, th, td, tr { display: block; }
-  th { position: absolute; left: -9999px; top: -9999px; }
-  tr { margin-bottom: 10px; border: 1px solid #ccc; }
-  td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; min-height: 30px; }
-  td:before { position: absolute; left: 10px; top: 8px; white-space: nowrap; font-weight: bold; }
-  td:nth-of-type(1):before { content: 'Program'; }
-  td:nth-of-type(2):before { content: 'File Name'; }
-  td:nth-of-type(3):before { content: 'File Size (bytes)'; }
-  td:nth-of-type(4):before { content: 'Created'; }
-  td:nth-of-type(5):before { content: 'Modified'; }
-  td:nth-of-type(6):before { content: 'SHA256'; }
-  td:nth-of-type(7):before { content: 'SHA3_256'; }
-  td:nth-of-type(8):before { content: 'BLAKE2b_256'; }
-}
-</style>
-</head><body><div class='container'><h1>Program Hash List</h1><table><thead><tr>
-<th>Program</th><th>File Name</th><th>File Size (bytes)</th><th>Created</th><th>Modified</th><th>SHA256</th><th>SHA3_256</th><th>BLAKE2b_256</th>
-</tr></thead><tbody>
-<tr><td>create_exe</td><td>create_exe.exe</td><td>10576904</td><td>2025-06-26 05:48:15</td><td>2025-06-26 01:31:09</td><td>b6be4a7484988ba995b94d8529b774f6f53cf9616fb90c4ae374b8e9e348b680</td><td>e38350b48d1c9203eded592a13ca068bd75fe126646fb8a7e94007d4c05b1987</td><td>1c844a7af8ffd04a5a6b4680635f59f2bcf587d2fe14f0557db77d14ad8b924016f990847ac764d4b3c46c1ea0f559669c4452f23ebb20a9308b88b99ecaf2f3</td></tr>
-<tr><td>create_exe</td><td>create_exe.spec</td><td>758</td><td>2025-06-26 05:49:22</td><td>2025-06-26 01:30:55</td><td>89990facefd33431f5d3a9776c2acf93124c5b3dbda02a5ac7a22a93306e9d04</td><td>ba22669a9205c9bdda7d89ec0d6e7144562b09f39f44360256c2d2ab4298ecca</td><td>39205d7c21c3b16ac37161c1f75c0a6444854160e95d7489d7b4ca4447ec5430f4fdf3ec7490475e0d06d0db5b2c41ac73204084495cd264ec6cd7160a0943e3</td></tr>
-</tbody></table></div></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hash List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { max-width: 600px; margin: auto; padding: 1em; font-size: 1.1em; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 0.5em; border: 1px solid #ccc; text-align: left; }
+    @media (max-width: 600px) {
+      body { padding: 0.5em; font-size: 1em; }
+      table, thead, tbody, th, td, tr { display: block; width: 100%; }
+      th, td { box-sizing: border-box; }
+      th { background: #f9f9f9; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hash List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Hash</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Example Item 1</td>
+        <td>123456789abcdef</td>
+      </tr>
+      <tr>
+        <td>Example Item 2</td>
+        <td>fedcba987654321</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
